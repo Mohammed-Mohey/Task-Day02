@@ -1,0 +1,248 @@
+{\rtf1\fbidis\ansi\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}{\f1\fnil\fcharset2 Wingdings;}{\f2\fnil Calibri;}{\f3\fnil\fcharset178 Calibri;}}
+{\colortbl ;\red255\green0\blue0;\red0\green77\blue187;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.18362}\viewkind4\uc1 
+\pard\ltrpar\sa200\sl276\slmult1\qc\f0\fs56\lang9 Part01 \par
+
+\pard\ltrpar\sa200\sl276\slmult1\cf1\fs24 problem: Add both single-line and multi-line comments in the following code segment \par
+explaining its purpose: \par
+int x = 10; \par
+int y = 20; \par
+int sum = x + y; \par
+Console.WriteLine(sum); \par
+\cf0\fs22 // Declare and initialize variable x with the value 10\par
+int x = 10;\par
+// Declare and initialize variable y with the value 20\par
+int y = 20;\par
+\par
+/* \par
+   Calculate the sum of x and y \par
+   and store the result in the variable sum\par
+*/\par
+int sum = x + y;\par
+// Print the value of sum to the console\par
+Console.WriteLine(sum);\par
+\cf1\fs28 Question: What is the shortcut to comment and uncomment a selected block of code in Visual Studio? \cf0\fs22\par
+Comment a block of code: Ctrl + K, Ctrl + C\par
+\par
+Uncomment a block of code: Ctrl + K, Ctrl + U\par
+\par
+\par
+\cf1\fs32 Problem: Identify and fix the errors in this code snippet: \par
+int x = "10"; \par
+console.WriteLine(x + y); \par
+\cf0\fs22 The variable x is being assigned a string value "10", but it should be an integer.\par
+\par
+The Console class is incorrectly written in lowercase as console\par
+\par
+\cf1\fs28  Explain the difference between a runtime error and a logical error with examples?\par
+\cf0\fs22\par
+Runtime Error\par
+A runtime error occurs while the program is running\par
+Example\par
+int[] numbers = \{1, 2, 3\};\par
+Console.WriteLine(numbers[3]); \par
+In this example, the code tries to access an element at index 3 in an array that only has three elements (indices 0, 1, and 2)\par
+Logical Error\par
+A logical error occurs when the program runs without crashing but produces incorrect results\par
+Example\par
+int x = 10;\par
+int y = 20;\par
+int sum = x - y; // Logical error: should be x + y\par
+Console.WriteLine(sum); // This will print -10 instead of 30\par
+In this example, the code is supposed to calculate the sum of x and y, but due to a logical error, it subtracts\par
+\par
+\cf1\fs28 Problem: Declare variables using proper naming conventions to store: \par
+\f1\'b7\f0  Your full name. \par
+\f1\'b7\f0  Your age. \par
+\f1\'b7\f0  Your monthly salary. \par
+\f1\'b7\f0  Whether you are a student. \par
+\par
+\cf0\fs22 // Declare a variable to store your full name\par
+string fullName = "mohamed mohey";\par
+int age = 22;\par
+int monthlySalary = 3000;\par
+bool isStudent = true;\par
+\cf1\fs28 Question: Why is it important to follow naming conventions such as PascalCase in C#? \par
+\cf0\fs22 Readability: Consistent naming conventions make code easier to read and understand\par
+Maintainability: Code that adheres to naming conventions is easier to maintain\par
+\cf1\fs28 Problem: Write a program to demonstrate that changing the value of a reference type affects all references pointing to that object?\par
+\cf0\fs22 class Program \{\par
+ static void Main() \{\par
+Person person1 = new Person(); \par
+person1.Name = "mohamed"; \par
+ Person person2 = person1; \par
+class Person \{ public string Name \}\par
+\cf1\fs24 Question: Explain the difference between value types and reference types in terms of memory allocation?\par
+\cf0 Value types :\cf1\par
+\cf0 Value types are stored directly in the stack\par
+When you assign a value type to another variable, a copy of the value is made. Changes to one variable do not affect the other\par
+Reference types :\par
+Reference types are stored in the heap\par
+When you assign a reference type to another variable, both variables refer to the same object in the heap. Changes to one variable affect the other\par
+\par
+\cf1 Problem: Create a program that calculates the following using variables x = 15 and y = 4: \par
+o Sum \par
+o Difference \par
+o Product \par
+o Division result \par
+o Remainder ??\cf0\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        int x = 15;\par
+        int y = 4;\par
+        // Calculate sum\par
+        int sum = x + y;\par
+        Console.WriteLine("Sum: " + sum);\par
+\par
+        // Calculate difference\par
+        int difference = x - y;\par
+        Console.WriteLine("Difference: " + difference);\par
+\par
+        // Calculate product\par
+        int product = x * y;\par
+        Console.WriteLine("Product: " + product);\par
+\par
+        // Calculate division result\par
+        double divisionResult = (double)x / y;\par
+        Console.WriteLine("Division Result: " + divisionResult);\par
+        // Calculate remainder\par
+        int remainder = x % y;\par
+        Console.WriteLine("Remainder: " + remainder);\par
+    \}\par
+\}\par
+\par
+\cf1 Question: What will be the output of the following code? Explain why: \par
+int a = 2, b = 7; \par
+Console.WriteLine(a % b);?\par
+\cf0 The output of the code will be: 2\par
+2 divided by 7 is 0 with a remainder of 2, the result of a % b is 2\cf1\par
+\par
+Problem: Write a program that checks if a given number is both: \par
+o Greater than 10. \par
+o Even. ???\cf0\par
+\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        int num = 12;\par
+        if (number > 10 && num % 2 == 0)\par
+        \{\par
+            Console.WriteLine("The number is greater than 10 and even.");\par
+        \}\par
+        else\par
+        \{\par
+            Console.WriteLine("The number is not greater than 10 and not even");\par
+        \}\par
+    \}\par
+\}\par
+\cf1 Question: How does the && (logical AND) operator differ from the & (bitwise AND) operator? \par
+\cf0 Logical AND (&&)\par
+&& operator is used to perform a logical AND operation between two boolean expressions.\par
+meaning if the first operand is false, the second operand is not evaluated because the result will be false regardless.\par
+Bitwise AND (&)\par
+The & operator is used to perform a bitwise AND operation between two integer values. It can also be used with boolean values.\par
+Both operands are always evaluated, regardless of the first operand's value.\par
+\cf1 Problem: Implement a program that takes a double input from the user and casts it to an int. \par
+Use both implicit and explicit casting, then print the results??\cf0\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+           // Implicit casting is not directly possible for double to int.\par
+            // because it can lead to data loss.\par
+            // use implicit casting within compatible types (e.g., double to float).\par
+\par
+        double input = Convert.ToDouble(Console.ReadLine());\par
+        // Explicit casting\par
+        int explicitCast = (int)input;\par
+\par
+        // Print the results\par
+        Console.WriteLine("Explicitly casted to int: " + explicitCast);\par
+    \}\par
+\}\par
+\cf1 Question: Why is explicit casting required when converting a double to an int? \par
+\cf0  because the conversion is narrowing\f2\emdash it involves a potential loss of data. A double is a floating-point type that can represent decimal values, while an int is an integer type that only stores whole numbers. When casting from double to int, the fractional part is truncated, which can change the value significantly.\par
+\par
+\cf1 Problem: Write a program that: (G01 Bonus, G02 mandatory)\par
+o Prompts the user for their age as a string. \par
+o Converts the string to an integer using Parse\par
+o Checks if the age is valid (e.g., greater than 0). \cf0\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        string ageString = Console.ReadLine();\par
+\par
+        // Convert the string to an integer using Parse\par
+        int age = int.Parse(ageString);\par
+\par
+        // Check if the age is valid (greater than 0)\par
+        if (age > 0)\par
+        \{\par
+            Console.WriteLine("Your age is valid.");\par
+        \}\par
+        else\par
+        \{\par
+            Console.WriteLine("Invalid age.");\par
+        \}\par
+    \}\par
+\}\par
+\cf1\f0\lang1033 Problem: Write a program that demonstrates the difference between prefix and postfix increment operators using a variable x. ???????\cf0\par
+using System;\par
+\par
+class Program\par
+\{\par
+    static void Main()\par
+    \{\par
+        int x = 5;\par
+        int prefixResult = ++x;\par
+        Console.WriteLine("Result of ++x: " + prefixResult); // Output: 6\par
+        x = 5;\par
+        // postfix increment\par
+        int postfixResult = x++;\par
+        Console.WriteLine("Result of x++: " + postfixResult); // Output: 5\par
+    \}\par
+\}\par
+\cf1 Question: Given the code below, what is the value of x after execution? Explain why \par
+int x = 5; \par
+int y = ++x + x++; ???\par
+\cf0 The final value of x is 7:\cf1\par
+\cf0 => x starts at 5.\par
+++x increments x to 6 and uses 6.\par
+x++ uses 6 and then increments x to 7.\par
+\par
+
+\pard\ltrpar\sa200\sl276\slmult1\qc\cf2\fs48 Part02 \par
+
+\pard\ltrpar\sa200\sl276\slmult1\fs40  \cf1 LinkedIn\f3\rtlch\lang3073 =\par
+{\f0\ltrch\fs32\lang1033{\field{\*\fldinst{HYPERLINK https://www.linkedin.com/posts/mohammed-mohey-\f3 699338170\f0 _%D\f3 8\f0 %A\f3 5\f0 %D\f3 9\f0 %\f3 8\f0 A%D\f3 9\f0 %\f3 87\f0 -%D\f3 8\f0 %A\f3 7\f0 %D\f3 9\f0 %\f3 84\f0 %D\f3 9\f0 %\f3 81\f0 %D\f3 8\f0 %B\f3 1\f0 %D\f3 9\f0 %\f3 82\f0 -%D\f3 8\f0 %A\f3 8\f0 %D\f3 9\f0 %\f3 8\f0 A%D\f3 9\f0 %\f3 86\f0 -%D\f3 8\f0 %A\f3 7\f0 %D\f3 9\f0 %\f3 84\f0 %D\f3 9\f0 %\f3 80\f0 -stack-%D\f3 9\f0 %\f3 88\f0 %D\f3 8\f0 %A\f3 7\f0 %D\f3 9\f0 %\f3 84\f0 %D\f3 9\f0 %\f3 80\f0 -heap-%D\f3 9\f0 %\f3 88\f0 %D\f3 8\f0 %A\f3 7\f0 %D\f3 8\f0 %B\f3 2\f0 %D\f3 8\f0 %A\f3 7\f0 %D\f3 9\f0 %\f3 8\f0 A-activity-\f3 7266976390950887425\f0 -oivf?utm_source=share&utm_medium=member_desktop }}{\fldrslt{https://www.linkedin.com/posts/mohammed-mohey-\f3\rtlch\lang3073 699338170\f0\ltrch\lang1033 _%D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %A\f3\rtlch\lang3073 5\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 8\f0\ltrch\lang1033 A%D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 87\f0\ltrch\lang1033 -%D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %A\f3\rtlch\lang3073 7\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 84\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 81\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %B\f3\rtlch\lang3073 1\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 82\f0\ltrch\lang1033 -%D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %A\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 8\f0\ltrch\lang1033 A%D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 86\f0\ltrch\lang1033 -%D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %A\f3\rtlch\lang3073 7\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 84\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 80\f0\ltrch\lang1033 -stack-%D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 88\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %A\f3\rtlch\lang3073 7\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 84\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 80\f0\ltrch\lang1033 -heap-%D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 88\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %A\f3\rtlch\lang3073 7\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %B\f3\rtlch\lang3073 2\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 8\f0\ltrch\lang1033 %A\f3\rtlch\lang3073 7\f0\ltrch\lang1033 %D\f3\rtlch\lang3073 9\f0\ltrch\lang1033 %\f3\rtlch\lang3073 8\f0\ltrch\lang1033 A-activity-\f3\rtlch\lang3073 7266976390950887425\f0\ltrch\lang1033 -oivf?utm_source=share&utm_medium=member_desktop\ul0\cf0\f3 }}}}\f0\ltrch\fs32\lang1033\par
+\par
+what's the difference between compiled and interpreted languages and in this way what about Csharp? \par
+\cf0\fs28 Compiled Languages:\par
+These languages require a compiler to translate the source code into machine code (binary) before execution. The program is compiled once, and the resulting binary can run directly on the machine without further translation.\par
+\par
+Interpreted Languages:\par
+These use an interpreter to execute the code line by line at runtime. There\f2\rquote\f0 s no separate compilation step, so the execution is generally slower compared to compiled languages.\par
+\par
+C# is a hybrid language\f2\emdash it combines aspects of both compiled and interpreted languages:\par
+Compilation to Intermediate Language (IL):\par
+C# code is first compiled by the C# compiler (csc.exe) into an Intermediate Language (IL), not directly into machine code.\par
+Execution via the Common Language Runtime (CLR):\par
+The IL code is executed by the CLR, which is part of the .NET runtime. The CLR uses a Just-In-Time (JIT) Compiler to convert the IL into machine code at runtime.\f0\fs22\par
+\fs24\lang9\par
+\cf1\fs28 3- Compare between implicit, explicit, Convert and parse casting ???\par
+\cf0\fs24 Implicit casting: is automatically performed by the compiler when converting a smaller data type to a larger data type\par
+There is no risk of data loss, so the compiler handles it automatically.\par
+\par
+Explicit casting: is required when converting a larger data type to a smaller data type\par
+There is a risk of data loss, so the programmer must explicitly specify the conversion.\par
+\par
+The convert: convert between different data types. It handles null values and provides more flexibility.\par
+\par
+The Parse methods are used to convert a string representation of a number to its numeric type. It throws an exception if the conversion fails.\par
+\fs22\par
+}
+ 
